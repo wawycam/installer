@@ -9,16 +9,15 @@ To get all require dependencies simply copy and run the ```wawycam-install-depen
 
 ```
 # Create folder
-mkdir /home/pi/wawy/installer
-cd /home/pi/wawy/installer
+mkdir /home/pi/wawycam/installer
+cd /home/pi/wawycam/installer
 
 # Get and extract installer file
-wget https://github.com/wawycam/installer/wawycam-install-dependencies-1.0.0.tar.xz
-tar -xvf wawycam-install-dependencies-1.0.0.tar.xz
+wget https://raw.githubusercontent.com/wawycam/installer/master/wawycam-install-dependencies.sh
 
 # Execute installer
-chmod u=rx wawycam-install-dependencies-1.0.0.sh
-sudo ./wawycam-install-dependencies-1.0.0.sh
+chmod u=rx wawycam-install-dependencies.sh
+sudo ./wawycam-install-dependencies.sh
 ```
 
 Now it's coffee time as on a Rapsberry PI 3, dependencies installation can take up to 10 minutes.
