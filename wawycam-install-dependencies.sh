@@ -53,7 +53,7 @@ tar -xvf 0.4.0.tar.gz
 mv api-0.4.0 $DESTINATION/api
 
 # Delete tarball
-rm -rf 0.4.0.tgz
+rm -rf 0.4.0.tar.gz
 
 # Install dependencies
 cd ${DESTINATION}/api
