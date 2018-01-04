@@ -44,16 +44,16 @@ chown -R pi:pi ${DESTINATION}
 sudo -u pi bash << EOF
 
 cd ${DESTINATION}
-wget https://github.com/wawycam/api/archive/0.4.0.tar.gz
+wget https://github.com/wawycam/api/archive/latest.tar.gz
 
 # Extract latest
-tar -xvf 0.4.0.tar.gz
+tar -xvf api-latest.tar.gz
 
 # Move api to regular folder
-mv api-0.4.0 $DESTINATION/api
+mv api-latest $DESTINATION/api
 
 # Delete tarball
-rm -rf 0.4.0.tar.gz
+rm -rf latest.tar.gz
 
 # Install dependencies
 cd ${DESTINATION}/api
